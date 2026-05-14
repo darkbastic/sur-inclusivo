@@ -481,6 +481,18 @@ main.container {
   .navbar-inner {
     gap: 10px;
   }
+
+  .support-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    justify-items: center;
+  }
+
+  .info-box, .support-layout .card {
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+  }
 }
 
 /* Animations */
