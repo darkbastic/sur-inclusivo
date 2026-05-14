@@ -284,10 +284,11 @@ main.container {
 }
 
 .info-box ul li {
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 10px;
+  align-items: flex-start;
 }
 
 .btn-emergency {
