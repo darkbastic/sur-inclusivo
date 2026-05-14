@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sur-Inclusivo | Tu Guía Estudiantil</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span style="font-size: 1.5rem;">🎓</span> Sur-Inclusivo
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="beneficios.html" class="nav-link">Beneficios</a></li>
+        <li><a href="apoyo.html" class="nav-link">Apoyo</a></li>
+        <li><a href="mapa.html" class="nav-link">Mapa</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-btn" class="btn-theme">🌙</button>
+        <button id="menu-btn" class="menu-btn">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-landing fade-in">
+    <div class="container hero-landing-content">
+      <h1 class="page-title">Orientación estudiantil a un clic de distancia</h1>
+      <p class="hero-text">
+        <strong>Sur-Inclusivo</strong> es la plataforma de apoyo en <strong>INACAP Santiago Sur</strong> diseñada para
+        que encuentres todo lo que necesitas para tu vida académica y bienestar personal en un solo lugar.
+      </p>
+      <div class="hero-buttons">
+        <a href="#explorar" class="btn-emergency" style="background: var(--secondary);">Explorar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="explorar" class="container" style="padding: 80px 0;">
+    <div style="text-align: center; margin-bottom: 50px;" class="fade-in">
+      <h2 style="font-size: 2rem; margin-bottom: 15px;">¿Qué ofrecemos?</h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
+        Nuestra misión es facilitar tu autonomía informativa y asegurar que aproveches todos los recursos
+        institucionales.
+      </p>
+    </div>
+
+    <div class="dashboard">
+      <a href="beneficios.html" class="dash-card fade-in" style="animation-delay: 0.1s;">
+        <span class="dash-card-icon">🎁</span>
+        <h3>Beneficios</h3>
+        <p>Infórmate sobre becas, convenios y apoyos financieros para impulsar tu carrera.</p>
+        <span class="btn-text">Ver más →</span>
+      </a>
+      <a href="apoyo.html" class="dash-card fade-in" style="animation-delay: 0.2s;">
+        <span class="dash-card-icon">🧠</span>
+        <h3>Apoyo</h3>
+        <p>Accede a orientación psicológica y bienestar emocional de forma confidencial.</p>
+        <span class="btn-text">Ver más →</span>
+      </a>
+      <a href="mapa.html" class="dash-card fade-in" style="animation-delay: 0.3s;">
+        <span class="dash-card-icon">🗺️</span>
+        <h3>Mapa</h3>
+        <p>Localiza rápidamente salas, laboratorios y servicios dentro de nuestra sede.</p>
+        <span class="btn-text">Ver más →</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Features Section (Brief) -->
+  <section style="background: var(--bg-secondary); padding: 80px 0;">
+    <div class="container">
+      <div
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; text-align: center;">
+        <div class="fade-in">
+          <h4 style="color: var(--primary); font-size: 1.5rem; margin-bottom: 10px;">Accesibilidad</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">Información clara y estructurada para todos los
+            estudiantes.</p>
+        </div>
+        <div class="fade-in" style="animation-delay: 0.1s;">
+          <h4 style="color: var(--primary); font-size: 1.5rem; margin-bottom: 10px;">Rapidez</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">Encuentra lo que buscas en segundos, sin
+            complicaciones.</p>
+        </div>
+        <div class="fade-in" style="animation-delay: 0.2s;">
+          <h4 style="color: var(--primary); font-size: 1.5rem; margin-bottom: 10px;">Salud Mental</h4>
+          <p style="font-size: 0.9rem; color: var(--text-secondary);">Tu bienestar es nuestra prioridad, estamos aquí
+            para apoyarte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>INACAP Santiago Sur &copy; 2026 — Proyecto Sur-Inclusivo</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

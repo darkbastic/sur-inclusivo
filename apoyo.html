@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apoyo | Sur-Inclusivo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-brand">
+        <span style="font-size: 1.5rem;">🎓</span> Sur-Inclusivo
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Inicio</a></li>
+        <li><a href="beneficios.html" class="nav-link">Beneficios</a></li>
+        <li><a href="apoyo.html" class="nav-link">Apoyo</a></li>
+        <li><a href="mapa.html" class="nav-link">Mapa</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="theme-btn" class="btn-theme">🌙</button>
+        <button id="menu-btn" class="menu-btn">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header fade-in">
+    <div class="container">
+      <h1 class="page-title">Bienestar Estudiantil</h1>
+      <p class="page-subtitle">Cuidamos tu salud mental y bienestar emocional</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="support-layout fade-in">
+      <div class="info-box">
+        <h3>Bienestar Estudiantil</h3>
+        <p>Ofrecemos un espacio seguro y confidencial para que puedas conversar con profesionales sobre tus inquietudes
+          emocionales o académicas.</p>
+        <br>
+        <ul>
+          <li><strong>📍 Ubicación:</strong> Edificio Principal, Piso 2, Of. 205</li>
+          <li><strong>🕐 Horarios:</strong> Lunes a Viernes de 08:30 a 18:30 hrs</li>
+          <li><strong>📧 Contacto:</strong> bienestar.sur@inacap.cl</li>
+        </ul>
+        <button id="btn-ayuda" class="btn-emergency">🆘 Necesito ayuda ahora</button>
+      </div>
+      <div class="card" style="height: fit-content;">
+        <h3>¿En qué podemos ayudarte?</h3>
+        <p>• Contención emocional inmediata.</p>
+        <p>• Orientación psicológica breve.</p>
+        <p>• Derivación a especialistas si es necesario.</p>
+        <p>• Talleres de manejo de ansiedad y estrés.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal-ayuda" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h2 style="color: var(--primary); margin-bottom: 20px;">Contacto de Emergencia</h2>
+      <p>Si necesitas ayuda urgente, contacta a:</p>
+      <div
+        style="background: var(--bg-secondary); padding: 20px; border-radius: 12px; margin: 20px 0; text-align: left;">
+        <p><strong>📞 Teléfono:</strong> +56 2 2345 6800</p>
+        <p><strong>🏢 Ubicación:</strong> Bienestar Estudiantil (Piso 2)</p>
+        <p><strong>🛡️ Seguridad:</strong> Interno 444 (24 hrs)</p>
+      </div>
+      <p style="font-size: 0.9rem; color: var(--text-secondary);">No estás solo/a. Estamos aquí para acompañarte.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>INACAP Santiago Sur &copy; 2026 — Proyecto Sur-Inclusivo</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
