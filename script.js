@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme === 'dark') {
     body.setAttribute('data-theme', 'dark');
-    if(themeBtn) themeBtn.textContent = '☀️';
+    if (themeBtn) themeBtn.textContent = '☀️';
   }
 
   if (themeBtn) {
@@ -17,12 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
         body.removeAttribute('data-theme');
         localStorage.setItem('theme', 'light');
         themeBtn.textContent = '🌙';
-        showToast('Modo claro activado');
       } else {
         body.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
         themeBtn.textContent = '☀️';
-        showToast('Modo oscuro activado');
       }
     });
   }
@@ -90,9 +88,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const toast = document.createElement('div');
     toast.className = 'toast';
     toast.textContent = message;
-    
+
     container.appendChild(toast);
-    
+
     setTimeout(() => {
       toast.style.opacity = '0';
       setTimeout(() => toast.remove(), 300);
@@ -106,9 +104,4 @@ document.addEventListener('DOMContentLoaded', () => {
       link.classList.add('active');
     }
   });
-
-  // Welcome Toast
-  if (currentPath === 'index.html') {
-    setTimeout(() => showToast('👋 Bienvenido a Sur-Inclusivo'), 1000);
-  }
 });
